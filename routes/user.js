@@ -8,6 +8,10 @@ router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + ' /../public/index.html'));
 });
 
+router.get('/register', (req, res) => {
+  res.sendFile(path.join(__dirname + ' /../public/register.html'));
+});
+
 router.post('/user', async (req, res) => {
   const user = new User({
     firstName: req.body.firstName,
