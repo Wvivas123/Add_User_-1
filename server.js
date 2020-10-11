@@ -6,8 +6,14 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const userRoutes = require('./routes/user');
 //Start Server on port 3000
+let port = process.env.PORT;
 const app = express();
-app.listen(8000);
+
+if (port == null || port == '') {
+  port = 8000;
+}
+app.listen(port);
+
 console.log('Listening on 3000');
 
 //Middleware

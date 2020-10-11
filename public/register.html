@@ -3,22 +3,24 @@
     <meta charset="utf-8" />
 
     <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald" />
-    <meta name="author" content="SitePoint" />
+    <link rel="stylesheet" href="register.css" />
   </head>
 
   <body>
-    <form action="/action_page.php">
-      <label for="fname">First name:</label><br />
-      <input type="text" id="fname" name="fname" value="John" /><br />
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" value="Doe" /><br />
-      <label for="lname">email:</label><br />
-      <input type="text" id="lname" name="lname" value="Doe" /><br />
-      <label for="lname">username:</label><br />
-      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
-      <input type="submit" value="Submit" />
-    </form>
+    <div class="myForm">
+      <form name="myForm" id="myForm">
+        <input type="text" name="firstName" id="firstName" value="firstname" />
+        <br />
+        <input type="text" name="secondName" id="secondName" value="lastname" />
+        <br />
+        <input type="text" name="email" id="email" value="email" />
+        <br />
+
+        <input type="submit" />
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="register.js"></script>
   </body>
 </html>
