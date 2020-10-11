@@ -1,3 +1,5 @@
+alert('hello');
+
 document.getElementById('myForm').onsubmit = function () {
   //get values from forms
   const firstName = document.getElementById('firstName').value;
