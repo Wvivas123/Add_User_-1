@@ -14,7 +14,7 @@ document.getElementById('myForm').onsubmit = function () {
   //send Data to Server
   $.ajax({
     type: 'POST',
-    url: 'https://vast-reaches-61935.herokuapp.com/register',
+    url: 'https://vast-reaches-61935.herokuapp.com/',
     data: newUser,
     success: function () {
       alert('it works');
