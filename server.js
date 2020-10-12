@@ -10,7 +10,7 @@ let port = process.env.PORT;
 const app = express();
 
 if (port == null || port == '') {
-  port = 8000;
+  port = 8003;
 }
 app.listen(port);
 
@@ -23,10 +23,6 @@ app.use(bodyParser.json());
 app.use('/', userRoutes);
 app.use(express.static('public'));
 //DB Connect
-mongoose.connect(
-  process.env.DB_CONNECTION,
-  { useUnifiedTopology: true },
-  () => {
-    console.log('Database Connected');
-  }
-);
+mongoose.connect(process.env.DB_CONNECTON, { useUnifiedTopology: true }, () => {
+  console.log('Database Connected');
+});
