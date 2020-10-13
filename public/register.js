@@ -6,14 +6,11 @@ document.getElementById('myForm').onsubmit = function () {
 
   const email = document.getElementById('email').value;
 
-  //const userName = document.getElementById('userName').value;
-
   const newUser = JSON.stringify({
     firstName: firstName,
     secondName: secondName,
     email: email,
   });
-  alert(newUser);
 
   $.ajax({
     type: 'POST',

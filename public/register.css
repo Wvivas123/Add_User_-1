@@ -1,5 +1,64 @@
 body {
-  background-color: aqua;
+  background-color: whitesmoke;
+  font-family: 'Commissioner', sans-serif;
+}
+.top-div-index {
+  height: 40%;
+  text-align: center;
+}
+.mid-div-index {
+  text-align: center;
+  background-color: white;
+  height: 40%;
+}
+.bottom-div-index {
+  background-color: whitesmoke;
+  height: 40%;
+}
+.vid-right {
+  display: block;
+  float: right;
+}
+.buttons {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #4eb5f1;
+  text-align: center;
+  transition: all 0.2s;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4caf50;
 }
 
 .myForm {
