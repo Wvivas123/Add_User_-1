@@ -70,3 +70,8 @@ li a:hover:not(.active) {
   width: 40%;
   background-color: white;
 }
+.textbackground {
+  width: 80%;
+  margin: 0% 7% 0% 7%;
+  background-color: white;
+}
